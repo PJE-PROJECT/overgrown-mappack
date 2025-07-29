@@ -15,4 +15,3 @@ execute if block ~ ~0.4 ~ minecraft:stone_bricks run tp @s ~ ~1 ~
 execute if block ~ ~0.4 ~ minecraft:jungle_planks run tp @s ~ ~1. ~
 
 
-#execute positioned ~ ~-1 ~ if entity @e[type=minecraft:area_effect_cloud,tag=sbpg.portal,tag=sbpg.active,distance=..0.8] if score sbpg:tick_5 timer matches 2 run tp @s ~ ~-0.2 ~

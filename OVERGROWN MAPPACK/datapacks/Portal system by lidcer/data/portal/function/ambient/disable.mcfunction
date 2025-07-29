@@ -14,9 +14,19 @@ tag @s remove sp_a4_tb_catch_b1a
 tag @s remove sp_intro_01_06_chambertop
 tag @s remove sp_intro_01_08_chamberexit
 tag @s remove tag_discovery_01
+tag @s remove sp_a1_cube_fling_intro_ch2_a0
+tag @s remove sp_a1_cube_fling_intro_ch1_a0
+tag @s remove sp_a2_paints_ch2_a1
+tag @s remove sp_a3_vactube_lumber_a0
+tag @s remove sp_a2_fling_intro_a0
+tag @s remove amb_destroyed_elevator_lp_02
 tag @s remove amb_birds
 tag @s remove player_enter_tbeam_lp_01_looped
 tag @s remove decay
+tag @s remove sp_intro_02_lb1-1
+tag @s remove sp_intro_02_lx1-1
+tag @s remove sp_intro_02_lx2-1
+tag @s remove sp_intro_02_lx3-1
 tag @s remove sp_a4_intro_b0
 tag @s remove sp_a4_intro_b2
 tag @s remove sp_a4_intro_b3
@@ -44,10 +54,21 @@ scoreboard players set amb_waterdrips ambient_global 0
 scoreboard players set amb_insects_lp ambient_global 0
 
 scoreboard players set tag_discovery_01 ambient_global 0
+scoreboard players set sp_a1_cube_fling_intro_ch2_a0 ambient_global 0
+scoreboard players set sp_a1_cube_fling_intro_ch1_a0 ambient_global 0
+scoreboard players set sp_a2_paints_ch2_a1 ambient_global 0
+scoreboard players set sp_a2_fling_intro_a0 ambient_global 0
+scoreboard players set sp_a3_vactube_lumber_a0 ambient_global 0
+
+scoreboard players set amb_destroyed_elevator_lp_02 ambient_global 0
 scoreboard players set amb_birds ambient_global 0
 scoreboard players set player_enter_tbeam_lp_01_looped ambient_global 0
 
 scoreboard players set decay ambient_global 0
+scoreboard players set sp_intro_02_lb1-1 ambient_global 0
+scoreboard players set sp_intro_02_lx1-1 ambient_global 0
+scoreboard players set sp_intro_02_lx2-1 ambient_global 0
+scoreboard players set sp_intro_02_lx3-1 ambient_global 0
 scoreboard players set sp_a4_intro_b0 ambient_global 0
 scoreboard players set sp_a4_intro_b2 ambient_global 0
 scoreboard players set sp_a4_intro_b3 ambient_global 0

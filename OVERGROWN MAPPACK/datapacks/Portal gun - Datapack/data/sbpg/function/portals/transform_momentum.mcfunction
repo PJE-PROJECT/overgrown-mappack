@@ -78,9 +78,9 @@ scoreboard players operation motion_x workspace /= 16384 constant
 scoreboard players operation motion_y workspace /= 16384 constant
 scoreboard players operation motion_z workspace /= 16384 constant
 
-# tellraw @a ["transformed x",{"score":{"name":"motion_x","objective":"workspace"}}]
-# tellraw @a ["transformed y",{"score":{"name":"motion_y","objective":"workspace"}}]
-# tellraw @a ["transformed z",{"score":{"name":"motion_z","objective":"workspace"}}]
+#tellraw @a ["transformed x",{"score":{"name":"motion_x","objective":"workspace"}}]
+#tellraw @a ["transformed y",{"score":{"name":"motion_y","objective":"workspace"}}]
+#tellraw @a ["transformed z",{"score":{"name":"motion_z","objective":"workspace"}}]
 
 # Store back
 execute store result entity @s Motion[0] double 0.00008103515625 run scoreboard players get motion_x workspace

@@ -1,4 +1,4 @@
-tag @s add pickoff_block
+tag @s[type=player] add pickoff_block
 tp @e[type=minecraft:turtle,tag=SitPlate] ~ -666 ~
 kill @e[type=minecraft:turtle,tag=SitPlate]
 # Find paired portals, get relevant scores
@@ -7,6 +7,7 @@ execute as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal,tag=sbpg.entering
 execute as @e[type=minecraft:area_effect_cloud,tag=sbpg.portal,tag=!sbpg.entering,scores={sbpg.player_id=0},sort=nearest,limit=1] run function sbpg:portals/retrieve_matrix
 
 # If non-player, store momentum (before teleporting resets it)
+
 execute if entity @s[type=!minecraft:player] run function sbpg:code/store_motion
 
 # Teleport to exit portal
@@ -53,6 +54,10 @@ execute if entity @s[type=minecraft:player] run playsound minecraft:portal_exit_
 
 execute if entity @s[tag=gel_blob] run kill @s
 execute if entity @s[tag=gel_blob,tag=blue] at @s run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:potion",components:{"minecraft:custom_model_data":34,"minecraft:potion_contents":{custom_color:0}},count:1}],Tags:["gel_blob","portable","blue","new"]}
+execute if entity @s[tag=gel_blob,tag=orange] at @s run summon minecraft:armor_stand ~ ~ ~ {Small:1b,Invulnerable:1b,PersistenceRequired:1b,NoBasePlate:1b,ArmorItems:[{},{},{},{id:"minecraft:potion",components:{"minecraft:custom_model_data":35,"minecraft:potion_contents":{custom_color:0}},count:1}],Tags:["gel_blob","portable","orange","new"]}
+
+
+
 execute at @s[tag=gel_blob] run data modify entity @e[type=minecraft:armor_stand,distance=..0.1,tag=gel_blob,tag=new,limit=1] Motion set from entity @s Motion
 
 

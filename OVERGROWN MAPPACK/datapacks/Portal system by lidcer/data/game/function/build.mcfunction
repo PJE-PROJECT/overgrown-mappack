@@ -11,3 +11,6 @@ tag @s remove menu.quit
 tag @s remove menu.new
 tag @s remove menu.options
 stopsound @s
+scoreboard players set lightresume map 0
+scoreboard players set lightresume load 0
+scoreboard players set update load 0

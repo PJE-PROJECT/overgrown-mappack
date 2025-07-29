@@ -17,17 +17,16 @@ execute if score pics config matches ..-1 run scoreboard players set pics config
 
 ## CASCADE LIGHT
 execute if score @s slot matches 1 run playsound minecraft:menu_accept master @a ~ ~ ~ 1 1 1
-execute if score @s slot matches 1 run scoreboard players remove cascade_light config 1
+execute if score @s slot matches 1 run scoreboard players remove motion_blur config 1
 
 execute if score @s slot matches 4 run playsound minecraft:menu_accept master @a ~ ~ ~ 1 1 1
-execute if score @s slot matches 4 run scoreboard players remove cascade_light config 1
+execute if score @s slot matches 4 run scoreboard players remove motion_blur config 1
 
 execute if score @s slot matches 7 run playsound minecraft:menu_accept master @a ~ ~ ~ 1 1 1
-execute if score @s slot matches 7 run scoreboard players remove cascade_light config 1
+execute if score @s slot matches 7 run scoreboard players remove motion_blur config 1
 
-execute if score cascade_light config matches ..-1 run scoreboard players set cascade_light config 1
-execute if score cascade_light config matches 0 run item replace entity @e[type=minecraft:item_display,tag=light,distance=..100] container.0 with air
-execute if score cascade_light config matches 1 run item replace entity @e[type=minecraft:item_display,tag=light,distance=..100] container.0 with yellow_stained_glass
+execute if score motion_blur config matches ..-1 run scoreboard players set motion_blur config 1
+execute if score motion_blur config matches 0 run kill @e[type=minecraft:item_display,tag=motion_blur,distance=..200]
 
 # BACK
 execute if score @s slot matches 2 if score pause timer matches 0 run tag @s add menu.main

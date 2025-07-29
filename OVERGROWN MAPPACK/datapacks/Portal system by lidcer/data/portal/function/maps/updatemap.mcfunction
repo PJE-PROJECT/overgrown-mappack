@@ -46,9 +46,9 @@ execute as @e[type=minecraft:item_display,tag=vertdoor,tag=auto,tag=saved,tag=!b
 tag @e[type=minecraft:item_display,tag=arm64,tag=error,tag=arm_anim] remove arm_anim
 tag @e[type=minecraft:item_display,tag=arm64,tag=headbut,tag=arm_anim] remove arm_anim
 
-# LIGHT
-execute if score cascade_light config matches 0 run item replace entity @e[type=minecraft:item_display,tag=light,distance=..100] container.0 with air
-execute if score cascade_light config matches 1 run item replace entity @e[type=minecraft:item_display,tag=light,distance=..100] container.0 with yellow_stained_glass
+# MOTION BLUR
+execute if score motion_blur config matches 0 run kill @e[type=minecraft:item_display,tag=motion_blur,distance=..200]
+
 tp @e[tag=collus] 0 -666 0
 kill @e[tag=collus]
 tag @e[tag=cube,tag=ID] remove ID
@@ -59,6 +59,7 @@ attribute @a[limit=1] minecraft:generic.gravity base set 0.08
 
 execute at @a[limit=1] run function elevator:reset_arrival
 execute at @a[limit=1] run function elevator:reset_departure
+
 
 
 

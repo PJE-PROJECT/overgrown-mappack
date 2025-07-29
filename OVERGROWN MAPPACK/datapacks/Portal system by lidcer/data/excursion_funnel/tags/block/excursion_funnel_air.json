@@ -4,6 +4,8 @@
 	"minecraft:light",
 	"minecraft:cave_air",
 	"minecraft:void_air",
-	"minecraft:iron_trapdoor"
+	"minecraft:iron_trapdoor",
+	"minecraft:lime_stained_glass",
+	"minecraft:snow"
 	]
 }

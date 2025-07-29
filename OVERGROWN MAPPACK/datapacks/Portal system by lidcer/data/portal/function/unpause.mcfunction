@@ -20,3 +20,9 @@ execute as @e[tag=prop] run data modify entity @s Marker set value 0b
 execute as @e[tag=prop] store result entity @s Motion[0] double 0.0001 run scoreboard players get @s pmotion.x
 execute as @e[tag=prop] store result entity @s Motion[1] double 0.0001 run scoreboard players get @s pmotion.y
 execute as @e[tag=prop] store result entity @s Motion[2] double 0.0001 run scoreboard players get @s pmotion.z
+
+
+execute as @e[tag=gel_blob] run data modify entity @s NoGravity set value 0b
+execute as @e[tag=gel_blob] store result entity @s Motion[0] double 0.0001 run scoreboard players get @s pmotion.x
+execute as @e[tag=gel_blob] store result entity @s Motion[1] double 0.0001 run scoreboard players get @s pmotion.y
+execute as @e[tag=gel_blob] store result entity @s Motion[2] double 0.0001 run scoreboard players get @s pmotion.z

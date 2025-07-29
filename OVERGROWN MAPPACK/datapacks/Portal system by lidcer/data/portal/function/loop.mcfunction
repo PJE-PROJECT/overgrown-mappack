@@ -19,6 +19,13 @@ execute if score pause timer matches 1.. run return 0
 execute if entity @a[tag=itempicker_activated,tag=!pickoff_block,limit=1,nbt={Inventory:[{id:"minecraft:carrot_on_a_stick",components:{"minecraft:custom_data":{Tags:["itempicker"]}},Slot:-106b}]}] run tag @e[tag=prop,tag=hovering,tag=hovering_motion,limit=1] remove hovering
 execute as @e[tag=prop,tag=hovering,tag=hovering_motion] run function portal:tick_hovering
 
+
+# MOTION BLUR
+execute positioned as @a[limit=1] if score motion_blur config matches 1 unless entity @e[tag=motion_blur,limit=1] run summon minecraft:item_display ~ ~ ~ {Tags:["motion_blur"],item:{id:"minecraft:red_stained_glass",components:{"minecraft:custom_model_data":11},Count:1b}}
+execute positioned as @a[limit=1] if score motion_blur config matches 1 if entity @e[tag=motion_blur,limit=1] run tp @e[tag=motion_blur] ~ ~ ~
+
+
+
 ## DEATH ANIM
 execute as @a[tag=death_anim,limit=1] at @s run function portal:death_anim/tick with storage portal:killed_box_rot
 
@@ -178,7 +185,7 @@ execute if entity @e[tag=sbpg.portal,limit=1] run function portal:portals
 
 #Lasers
 execute as @e[type=minecraft:armor_stand,tag=laser_cube,tag=laser_cube_new,sort=random,limit=1] run function laser:setup
-execute as @e[type=minecraft:armor_stand,tag=laser_emitter,tag=laser_emitter_new,sort=random,limit=1] run function laser:setup
+execute as @e[type=minecraft:item_display,tag=laser_emitter,tag=laser_emitter_new,sort=random,limit=1] run function laser:setup
 #Indicators
 execute if score indicators_setup timer matches 1.. run function portal:indicators_setup
 execute if score indicators_setup timer matches 1.. run scoreboard players remove indicators_setup timer 1
@@ -186,7 +193,7 @@ execute if score indicators_setup timer matches 1.. run scoreboard players remov
 #Funnel
 
 
-execute as @e[type=minecraft:armor_stand,tag=prop,tag=!hovering,tag=!useless] positioned as @s if entity @e[type=minecraft:item_display,distance=..1.5,tag=funnel] run function portal:funnel/funnel_tick
+execute as @e[type=minecraft:armor_stand,tag=prop,tag=!hovering,tag=!useless,tag=!hoverignore] positioned as @s if entity @e[type=minecraft:item_display,distance=..1.5,tag=funnel] run function portal:funnel/funnel_tick
 execute as @e[type=minecraft:armor_stand,tag=gel_blob] positioned as @s if entity @e[type=minecraft:item_display,distance=..1.5,tag=funnel] run function portal:funnel/funnel_tick
 
 

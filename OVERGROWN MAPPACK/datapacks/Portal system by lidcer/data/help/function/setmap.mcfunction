@@ -23,9 +23,29 @@ execute if entity @s[tag=amb_waterdrips] run tag @e[type=minecraft:marker,tag=ma
 execute if entity @s[tag=amb_insects_lp] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add amb_insects_lp
 
 execute if entity @s[tag=tag_discovery_01] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add tag_discovery_01
+execute if entity @s[tag=sp_a1_cube_fling_intro_ch2_a0] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a1_cube_fling_intro_ch2_a0
+execute if entity @s[tag=sp_a1_cube_fling_intro_ch1_a0] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a1_cube_fling_intro_ch1_a0
+execute if entity @s[tag=sp_a2_paints_ch2_a1] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a2_paints_ch2_a1
+execute if entity @s[tag=sp_a2_fling_intro_a0] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a2_fling_intro_a0
+execute if entity @s[tag=sp_a3_vactube_lumber_a0] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a3_vactube_lumber_a0
+
+
+
+
+
+
+execute if entity @s[tag=amb_destroyed_elevator_lp_02] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add amb_destroyed_elevator_lp_02
 execute if entity @s[tag=amb_birds] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add amb_birds
 
 execute if entity @s[tag=decay] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add decay
+
+execute if entity @s[tag=sp_intro_02_lb1-1] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_intro_02_lb1-1
+execute if entity @s[tag=sp_intro_02_lx1-1] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_intro_02_lx1-1
+execute if entity @s[tag=sp_intro_02_lx2-1] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_intro_02_lx2-1
+execute if entity @s[tag=sp_intro_02_lx3-1] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_intro_02_lx3-1
+
+
+
 
 execute if entity @s[tag=sp_a4_intro_b0] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a4_intro_b0
 execute if entity @s[tag=sp_a4_intro_b2] run tag @e[type=minecraft:marker,tag=mapamb,tag=new,limit=1] add sp_a4_intro_b2

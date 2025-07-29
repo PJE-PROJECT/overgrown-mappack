@@ -1,8 +1,7 @@
 tag @s add raycasting
 
-scoreboard players set colour workspace 16745731
+scoreboard players set colour workspace 16739586
 
-#item replace entity @s weapon.mainhand with minecraft:carrot_on_a_stick{mp5:1,mp6:1,CustomModelData:3,Unbreakable:1b,Tags:["itempicker"]}
 
 execute store result storage 1:1 x int 1 run data get entity @s Rotation[0]
 execute store result storage 1:1 y int 1 run data get entity @s Rotation[1]

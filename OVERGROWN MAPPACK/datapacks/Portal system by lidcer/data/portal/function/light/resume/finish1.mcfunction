@@ -9,3 +9,4 @@ function excursion_funnel:update
 
 execute if score update load matches 1.. as @a[limit=1] at @s run function saves:load_quick
 scoreboard players set lightresume load 0
+kill @e[tag=player.pos.light.resume]

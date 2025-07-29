@@ -5,7 +5,13 @@ execute as @e[tag=prop] store result score @s pmotion.x run data get entity @s M
 execute as @e[tag=prop] store result score @s pmotion.y run data get entity @s Motion[1] 10000
 execute as @e[tag=prop] store result score @s pmotion.z run data get entity @s Motion[2] 10000
 execute as @e[tag=prop] run data modify entity @s NoGravity set value 1b
-#execute as @e[tag=prop] run data modify entity @s Marker set value 1
+
+execute as @e[tag=gel_blob] store result score @s pmotion.x run data get entity @s Motion[0] 10000
+execute as @e[tag=gel_blob] store result score @s pmotion.y run data get entity @s Motion[1] 10000
+execute as @e[tag=gel_blob] store result score @s pmotion.z run data get entity @s Motion[2] 10000
+execute as @e[tag=gel_blob] run data modify entity @s NoGravity set value 1b
+
+
 
 tag @a[tag=gun_hold] remove gun_hold
 tag @a[limit=1] add menu

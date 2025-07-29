@@ -18,6 +18,7 @@
 	"minecraft:blue_stained_glass_pane",
 	"minecraft:purple_stained_glass_pane",
 	"minecraft:pink_stained_glass_pane",
-	"minecraft:iron_trapdoor"
+	"minecraft:iron_trapdoor",
+	"minecraft:iron_door"
 	]
 }

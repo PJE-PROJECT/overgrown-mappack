@@ -1,3 +1,4 @@
+tag @s add ambient
 execute if score setmap ambient_global matches ..1 run scoreboard players set setmap ambient_global 1
 tellraw @s ["\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"]
 tellraw @s [{"text":"Ambient tool","bold":true,"color":"gold","type":"text"},{"text":" ","type":"text"},{"text":"(Global)","italic":true,"color":"white","type":"text"}]
@@ -44,6 +45,20 @@ execute if entity @s[tag=!amb_birds] run tellraw @s ["    ",{"text":"[amb_birds]
 execute if entity @s[tag=decay] run tellraw @s ["    ",{"text":"[decay]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove decay"},"type":"text"}]
 execute if entity @s[tag=!decay] run tellraw @s ["    ",{"text":"[decay]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add decay"},"type":"text"}]
 
+
+execute if entity @s[tag=sp_intro_02_lb1-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lb1-1]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_intro_02_lb1-1"},"type":"text"}]
+execute if entity @s[tag=!sp_intro_02_lb1-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lb1-1]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_intro_02_lb1-1"},"type":"text"}]
+
+execute if entity @s[tag=sp_intro_02_lx1-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lx1-1]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_intro_02_lx1-1"},"type":"text"}]
+execute if entity @s[tag=!sp_intro_02_lx1-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lx1-1]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_intro_02_lx1-1"},"type":"text"}]
+
+execute if entity @s[tag=sp_intro_02_lx2-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lx2-1]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_intro_02_lx2-1"},"type":"text"}]
+execute if entity @s[tag=!sp_intro_02_lx2-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lx2-1]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_intro_02_lx2-1"},"type":"text"}]
+
+execute if entity @s[tag=sp_intro_02_lx3-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lx3-1]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_intro_02_lx3-1"},"type":"text"}]
+execute if entity @s[tag=!sp_intro_02_lx3-1] run tellraw @s ["    ",{"text":"[sp_intro_02_lx3-1]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_intro_02_lx3-1"},"type":"text"}]
+
+
 execute if entity @s[tag=sp_a4_intro_b0] run tellraw @s ["    ",{"text":"[sp_a4_intro_b0]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a4_intro_b0"},"type":"text"}]
 execute if entity @s[tag=!sp_a4_intro_b0] run tellraw @s ["    ",{"text":"[sp_a4_intro_b0]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a4_intro_b0"},"type":"text"}]
 
@@ -58,7 +73,27 @@ execute if entity @s[tag=!sp_a4_intro_b3] run tellraw @s ["    ",{"text":"[sp_a4
 execute if entity @s[tag=tag_discovery_01] run tellraw @s ["    ",{"text":"[tag_discovery_01]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove tag_discovery_01"},"type":"text"}]
 execute if entity @s[tag=!tag_discovery_01] run tellraw @s ["    ",{"text":"[tag_discovery_01]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add tag_discovery_01"},"type":"text"}]
 
+execute if entity @s[tag=sp_a1_cube_fling_intro_ch2_a0] run tellraw @s ["    ",{"text":"[sp_a1_cube_fling_intro_ch2_a0]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a1_cube_fling_intro_ch2_a0"},"type":"text"}]
+execute if entity @s[tag=!sp_a1_cube_fling_intro_ch2_a0] run tellraw @s ["    ",{"text":"[sp_a1_cube_fling_intro_ch2_a0]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a1_cube_fling_intro_ch2_a0"},"type":"text"}]
 
+execute if entity @s[tag=sp_a1_cube_fling_intro_ch1_a0] run tellraw @s ["    ",{"text":"[sp_a1_cube_fling_intro_ch1_a0]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a1_cube_fling_intro_ch1_a0"},"type":"text"}]
+execute if entity @s[tag=!sp_a1_cube_fling_intro_ch1_a0] run tellraw @s ["    ",{"text":"[sp_a1_cube_fling_intro_ch1_a0]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a1_cube_fling_intro_ch1_a0"},"type":"text"}]
+
+execute if entity @s[tag=sp_a2_paints_ch2_a1] run tellraw @s ["    ",{"text":"[sp_a2_paints_ch2_a1]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a2_paints_ch2_a1"},"type":"text"}]
+execute if entity @s[tag=!sp_a2_paints_ch2_a1] run tellraw @s ["    ",{"text":"[sp_a2_paints_ch2_a1]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a2_paints_ch2_a1"},"type":"text"}]
+
+execute if entity @s[tag=sp_a2_fling_intro_a0] run tellraw @s ["    ",{"text":"[sp_a2_fling_intro_a0]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a2_fling_intro_a0"},"type":"text"}]
+execute if entity @s[tag=!sp_a2_fling_intro_a0] run tellraw @s ["    ",{"text":"[sp_a2_fling_intro_a0]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a2_fling_intro_a0"},"type":"text"}]
+
+execute if entity @s[tag=sp_a3_vactube_lumber_a0] run tellraw @s ["    ",{"text":"[sp_a3_vactube_lumber_a0]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove sp_a3_vactube_lumber_a0"},"type":"text"}]
+execute if entity @s[tag=!sp_a3_vactube_lumber_a0] run tellraw @s ["    ",{"text":"[sp_a3_vactube_lumber_a0]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add sp_a3_vactube_lumber_a0"},"type":"text"}]
+
+
+
+
+
+execute if entity @s[tag=amb_destroyed_elevator_lp_02] run tellraw @s ["    ",{"text":"[amb_destroyed_elevator_lp_02]","color":"gold","clickEvent":{"action":"run_command","value":"/tag @s remove amb_destroyed_elevator_lp_02"},"type":"text"}]
+execute if entity @s[tag=!amb_destroyed_elevator_lp_02] run tellraw @s ["    ",{"text":"[amb_destroyed_elevator_lp_02]","color":"blue","clickEvent":{"action":"run_command","value":"/tag @s add amb_destroyed_elevator_lp_02"},"type":"text"}]
 
 
 tellraw @s {"text":"","type":"text"}
